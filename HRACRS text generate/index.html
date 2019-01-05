@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Handwritten Amharic Recognition</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+      <div class="row">
+
+        <div id="a" >
+            <h2 id="header">Handwritten Amharic Character and Word Recognition System</h2>
+            <p><small>Drag and drop your handwritten document to our system using the drag and drop web interface provided
+			,then click recognize to get ouput of your handwritten documment in text form. You can copy the output to your word file 
+			for further editorial work.</small></p>
+            <p><small>A machine learning model trained against the manually collected handwritten documents and preprocessed dataset will classify the handwritten document.
+			The editable text format will be displayed as a result.</small></p>
+            <div id="abc" class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-primary" id="predict">Recognize<i id="status"></i></button>
+                <button type="button" class="btn btn-default" id="runscript">Preprocess</button>
+				
+            </div>
+			
+			 <div  id="abcd" > 
+			
+			</div>
+			
+
+
+		
+		<textarea id="myText" rows="4" cols="40" tabindex="5" >OUTPUT</textarea>
+		<div  id="abcd" > 
+			<button type="button" class="btn btn-default" id="output">Generate Text</button>
+			</div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="js/fabric.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+</body>
+</html>
